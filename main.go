@@ -219,7 +219,7 @@ func (iv *invoicer) getIndex(w http.ResponseWriter, r *http.Request) {
         <link href="statics/style.css" rel="stylesheet">
     </head>
     <body>
-	<h1>Invoicer Web</h1>
+	<h1>Invoicer Web Hello World</h1>
 	<p><a href="/authenticate">Authenticate with Google</a></p>
 	</p>
         <p class="desc-invoice"></p>
@@ -284,8 +284,8 @@ func checkCSRFToken(token string) bool {
 }
 
 var oauthCfg = &oauth2.Config{
-	ClientID:     "606479880714-v36tg6qtn9alsinbvfb0qtmvjdkunq4c.apps.googleusercontent.com",
-	ClientSecret: "ySBC6T-F31ez3qsA3lnNRvtr",
+	ClientID:     "id",
+	ClientSecret: "secret",
 	RedirectURL:  "http://localhost:8080/oauth2callback",
 	Scopes:       []string{"https://www.googleapis.com/auth/userinfo.profile"},
 	Endpoint: oauth2.Endpoint{
